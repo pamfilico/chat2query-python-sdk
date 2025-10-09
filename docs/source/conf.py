@@ -43,7 +43,7 @@ extensions = [
     "sphinx_autodoc_typehints",
 ]
 
-autosummary_generate = True
+autosummary_generate = False
 autodoc_member_order = "bysource"
 autodoc_default_options = {
     "members": True,
@@ -57,7 +57,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = "furo"
+html_theme = "press"
 html_static_path = ["_static"]
 
 # SEO Configuration
@@ -82,10 +82,15 @@ html_meta = {
 html_baseurl = "https://pamfilico.github.io/chat2query-python-sdk/"
 html_extra_path = []
 
-# Furo theme options with dark/light switcher
+# Press theme options with external links
 html_theme_options = {
-    "source_repository": "https://github.com/pamfilico/chat2query-python-sdk",
-    "source_branch": "main",
-    "source_directory": "docs/source/",
-    "navigation_with_keys": True,
+    "external_links": [
+        ("GitHub", "https://github.com/pamfilico/chat2query-python-sdk"),
+        ("Chat2Query", "https://chat2query.com"),
+    ],
+}
+
+# Disable problematic sidebars for Press theme
+html_sidebars = {
+    '**': []
 }
