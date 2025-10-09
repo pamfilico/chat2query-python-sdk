@@ -57,7 +57,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = "alabaster"
+html_theme = "furo"
 html_static_path = ["_static"]
 
 # SEO Configuration
@@ -82,11 +82,10 @@ html_meta = {
 html_baseurl = "https://pamfilico.github.io/chat2query-python-sdk/"
 html_extra_path = []
 
-# Theme options for better GitHub Pages experience
+# Furo theme options with dark/light switcher
 html_theme_options = {
-    "github_user": "pamfilico",
-    "github_repo": "chat2query-python-sdk",
-    "github_banner": True,
-    "github_button": True,
-    "description": "Official Python SDK for Chat2Query API - Convert natural language to SQL",
+    "source_repository": "https://github.com/pamfilico/chat2query-python-sdk",
+    "source_branch": "main",
+    "source_directory": "docs/source/",
+    "navigation_with_keys": True,
 }
