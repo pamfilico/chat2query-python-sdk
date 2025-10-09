@@ -59,3 +59,16 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 html_theme = "alabaster"
 html_static_path = ["_static"]
+
+# GitHub Pages configuration
+html_baseurl = "https://pamfilico.github.io/chat2query-python-sdk/"
+html_extra_path = []
+
+# Theme options for better GitHub Pages experience
+html_theme_options = {
+    "github_user": "pamfilico",
+    "github_repo": "chat2query-python-sdk",
+    "github_banner": True,
+    "github_button": True,
+    "description": "Python SDK for Chat2Query API",
+}
