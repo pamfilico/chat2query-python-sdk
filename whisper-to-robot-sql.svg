@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Person whispering -->
+  <g id="person">
+    <!-- Head -->
+    <circle cx="40" cy="80" r="15" fill="#FFD700" stroke="#333" stroke-width="2"/>
+    <!-- Body -->
+    <path d="M 40 95 L 40 120" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arms -->
+    <path d="M 40 100 L 55 110" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 100 L 30 105" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M 40 120 L 35 140" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 120 L 45 140" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- Mouth (whispering) -->
+    <circle cx="48" cy="82" r="3" fill="#333"/>
+  </g>
+
+  <!-- Speech bubble with text -->
+  <g id="speech-bubble">
+    <ellipse cx="70" cy="65" rx="18" ry="12" fill="#E8F4F8" stroke="#4A90E2" stroke-width="1.5"/>
+    <path d="M 56 70 L 48 76" stroke="#4A90E2" stroke-width="1.5" fill="none"/>
+    <text x="70" y="69" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">chat</text>
+  </g>
+
+  <!-- Robot -->
+  <g id="robot">
+    <!-- Antenna -->
+    <line x1="120" y1="45" x2="120" y2="55" stroke="#666" stroke-width="2"/>
+    <circle cx="120" cy="43" r="3" fill="#FF6B6B"/>
+
+    <!-- Head -->
+    <rect x="105" y="55" width="30" height="30" rx="3" fill="#B0BEC5" stroke="#333" stroke-width="2"/>
+    <!-- Eyes -->
+    <circle cx="113" cy="68" r="3" fill="#4A90E2"/>
+    <circle cx="127" cy="68" r="3" fill="#4A90E2"/>
+    <!-- Mouth -->
+    <rect x="112" y="76" width="16" height="3" rx="1" fill="#333"/>
+
+    <!-- Body -->
+    <rect x="100" y="90" width="40" height="45" rx="4" fill="#90A4AE" stroke="#333" stroke-width="2"/>
+    <!-- Chest panel -->
+    <rect x="108" y="98" width="24" height="30" rx="2" fill="#B0BEC5" stroke="#333" stroke-width="1"/>
+    <!-- Buttons -->
+    <circle cx="120" cy="108" r="2" fill="#4CAF50"/>
+    <circle cx="120" cy="116" r="2" fill="#FFC107"/>
+
+    <!-- Arms -->
+    <rect x="88" y="95" width="10" height="25" rx="3" fill="#78909C" stroke="#333" stroke-width="1.5"/>
+    <rect x="142" y="95" width="10" height="25" rx="3" fill="#78909C" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Legs -->
+    <rect x="106" y="138" width="10" height="20" rx="2" fill="#78909C" stroke="#333" stroke-width="1.5"/>
+    <rect x="124" y="138" width="10" height="20" rx="2" fill="#78909C" stroke="#333" stroke-width="1.5"/>
+  </g>
+
+  <!-- SQL Output -->
+  <g id="sql-output">
+    <!-- Output box -->
+    <rect x="145" y="85" width="50" height="50" rx="3" fill="#1E1E1E" stroke="#4CAF50" stroke-width="2"/>
+    <!-- SQL text -->
+    <text x="148" y="97" font-family="Courier New, monospace" font-size="7" fill="#4CAF50">SELECT</text>
+    <text x="148" y="105" font-family="Courier New, monospace" font-size="7" fill="#4CAF50">  name,</text>
+    <text x="148" y="113" font-family="Courier New, monospace" font-size="7" fill="#4CAF50">  email</text>
+    <text x="148" y="121" font-family="Courier New, monospace" font-size="7" fill="#4CAF50">FROM</text>
+    <text x="148" y="129" font-family="Courier New, monospace" font-size="7" fill="#4CAF50">  users;</text>
+
+    <!-- Arrow from robot to SQL -->
+    <path d="M 140 110 L 145 110" stroke="#4CAF50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#4CAF50"/>
+    </marker>
+  </defs>
+</svg>

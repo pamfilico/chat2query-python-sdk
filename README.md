@@ -1,5 +1,9 @@
 # Chat2Query Python SDK
 
+<p align="center">
+  <img src="whisper-to-robot-sql.svg" alt="Chat2Query - Natural Language to SQL" width="200"/>
+</p>
+
 Python SDK for interacting with the Chat2Query API. Convert natural language questions into SQL queries and execute them against your databases.
 
 ## Installation
