@@ -1,0 +1,122 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+Copyright (c) 2025 Chat2Query. All rights reserved.
+
+IMPORTANT: READ CAREFULLY BEFORE USING THIS SOFTWARE
+
+This Proprietary Software License Agreement ("Agreement") is a legal agreement between
+you (either an individual or a single entity) and Chat2Query for the Chat2Query Python SDK
+software product, which includes computer software and may include associated media,
+printed materials, and online or electronic documentation ("Software").
+
+BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE
+TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT
+INSTALL OR USE THE SOFTWARE.
+
+1. GRANT OF LICENSE
+
+Subject to the terms and conditions of this Agreement and your maintenance of a valid,
+active, and paid account with Chat2Query (accessible at https://chat2query.com), Chat2Query
+grants you a limited, non-exclusive, non-transferable, revocable license to use the Software
+solely for your internal business purposes.
+
+2. LICENSE RESTRICTIONS
+
+You may NOT:
+a) Use the Software without maintaining an active paid account with Chat2Query
+b) Distribute, sublicense, rent, lease, or lend the Software to any third party
+c) Modify, reverse engineer, decompile, or disassemble the Software
+d) Remove or alter any proprietary notices, labels, or marks on the Software
+e) Use the Software to develop competing products or services
+f) Share your account credentials or API keys with unauthorized users
+g) Use the Software in any manner that violates applicable laws or regulations
+
+3. ACCOUNT REQUIREMENT
+
+Use of this Software requires:
+a) A valid account registered at https://chat2query.com
+b) An active paid subscription or sufficient account credits
+c) Compliance with Chat2Query's Terms of Service and Acceptable Use Policy
+
+Chat2Query reserves the right to suspend or terminate your license immediately if your
+account becomes inactive, payment fails, or you violate the terms of service.
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. Chat2Query and its licensors retain all right, title,
+and interest in and to the Software, including all intellectual property rights. This
+Agreement does not grant you any rights to trademarks, service marks, or trade names of
+Chat2Query.
+
+5. TERMINATION
+
+This license is effective until terminated. Your rights under this license will terminate
+automatically without notice if you:
+a) Fail to maintain an active paid account with Chat2Query
+b) Fail to comply with any term of this Agreement
+c) Violate Chat2Query's Terms of Service
+
+Upon termination, you must cease all use of the Software and destroy all copies in your
+possession or control.
+
+6. WARRANTY DISCLAIMER
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NON-INFRINGEMENT. CHAT2QUERY DOES NOT WARRANT THAT THE SOFTWARE
+WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED
+OR ERROR-FREE.
+
+7. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL CHAT2QUERY BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR
+CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF
+BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER
+PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF
+CHAT2QUERY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8. SUPPORT AND UPDATES
+
+Chat2Query may, but is not obligated to, provide technical support, updates, or
+enhancements to the Software. Any such support or updates are subject to this Agreement
+and your maintained paid account status.
+
+9. COMPLIANCE WITH LAWS
+
+You agree to comply with all applicable local, state, national, and international laws
+and regulations with respect to your use of the Software.
+
+10. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the
+jurisdiction in which Chat2Query operates, without regard to its conflict of law
+provisions.
+
+11. ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between you and Chat2Query regarding the
+Software and supersedes all prior or contemporaneous understandings regarding such subject
+matter.
+
+12. CONTRIBUTIONS
+
+Chat2Query welcomes contributions to the Software. By submitting a pull request or other
+contribution to the Software's repository, you:
+a) Grant Chat2Query a perpetual, worldwide, non-exclusive, royalty-free, irrevocable
+   license to use, reproduce, modify, and distribute your contribution
+b) Represent that you have the right to grant this license
+c) Acknowledge that your contribution does not grant you any rights to use the Software
+   beyond those specified in this Agreement, and you must still maintain a paid account
+   to use the Software
+
+All contributions are subject to review and acceptance by Chat2Query at its sole discretion.
+
+13. CONTACT INFORMATION
+
+For questions about this license or to establish a paid account, please visit:
+https://chat2query.com
+
+Or contact: georgios@pamfili.co
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT,
+AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
