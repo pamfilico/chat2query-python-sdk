@@ -89,8 +89,3 @@ html_theme_options = {
         ("Chat2Query", "https://chat2query.com"),
     ],
 }
-
-# Disable problematic sidebars for Press theme
-html_sidebars = {
-    '**': []
-}
