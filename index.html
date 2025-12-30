@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Chat2Query Python SDK</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script src="_static/documentation_options.js?v=01f34227"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+      <link rel="canonical" href="https://pamfilico.github.io/chat2query-python-sdk/index.html" />
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="chat2query package" href="api/chat2query.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="#" class="home-link">
+    
+      <span class="site-name">Chat2Query Python SDK</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/pamfilico/chat2query-python-sdk"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://chat2query.com"
+        class="nav-link external">
+          Chat2Query <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/pamfilico/chat2query-python-sdk"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="https://chat2query.com"
+        class="nav-link external">
+          Chat2Query <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="#resource-guides">API Reference</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api/chat2query.html" class="reference internal ">chat2query package</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api/modules.html" class="reference internal ">chat2query</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+    
+    <li>Chat2Query Python SDK</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="next">
+    <a href="api/chat2query.html"
+       title="next chapter">chat2query package →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="chat2query-python-sdk">
+<h1>Chat2Query Python SDK<a class="headerlink" href="#chat2query-python-sdk" title="Link to this heading">¶</a></h1>
+<p>Build conversational experiences that translate natural language into SQL with
+Chat2Query. This SDK gives Python developers a typed, friendly interface to the
+Chat2Query platform, letting you:</p>
+<ul class="simple">
+<li><p>Authenticate with the same application API keys used by your team</p></li>
+<li><p>Manage databases, chats, and messages programmatically</p></li>
+<li><p>Generate SQL through Chat2Query’s AI pipeline and inspect execution metadata</p></li>
+</ul>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>Most teams install the SDK either into an existing virtual environment or
+through Poetry. Pick whichever matches your workflow:</p>
+<p><strong>Pip</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>chat2query-python-sdk
+</pre></div>
+</div>
+<p><strong>Poetry</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>add<span class="w"> </span>chat2query-python-sdk
+</pre></div>
+</div>
+</section>
+<section id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chat2query</span><span class="w"> </span><span class="kn">import</span> <span class="n">Chat2QueryService</span>
+
+<span class="n">service</span> <span class="o">=</span> <span class="n">Chat2QueryService</span><span class="p">(</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;c2q-...your-application-key...&quot;</span><span class="p">,</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:5000&quot;</span><span class="p">,</span>  <span class="c1"># or https://chat2query.com</span>
+<span class="p">)</span>
+
+<span class="c1"># List databases</span>
+<span class="k">for</span> <span class="n">db</span> <span class="ow">in</span> <span class="n">service</span><span class="o">.</span><span class="n">databases</span><span class="o">.</span><span class="n">list</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span> <span class="n">db</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+
+<span class="c1"># Create a chat and ask a question</span>
+<span class="n">chat</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">chats</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">database_id</span><span class="o">=</span><span class="n">db</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;SDK Demo&quot;</span><span class="p">)</span>
+<span class="n">answers</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">ask</span><span class="p">(</span><span class="n">chat_id</span><span class="o">=</span><span class="n">chat</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span> <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;Show top customers&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;response&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section id="workflow-overview">
+<h2>Workflow Overview<a class="headerlink" href="#workflow-overview" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Connect</strong> using an application API key. The SDK validates the key on init.</p></li>
+<li><p><strong>Organize</strong> resources with <cite>service.databases</cite> and <cite>service.chats</cite>.</p></li>
+<li><p><strong>Converse</strong> through <cite>service.messages</cite>: ask questions, regenerate answers,
+and review API specs or usage.</p></li>
+<li><p><strong>Ship</strong>: automate insights, power customer dashboards, or embed SQL tooling
+within your own product.</p></li>
+</ol>
+</section>
+<section id="resource-guides">
+<h2>Resource Guides<a class="headerlink" href="#resource-guides" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/chat2query.html">chat2query package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.Chat2QueryClient"><code class="docutils literal notranslate"><span class="pre">Chat2QueryClient</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.DatabaseResource"><code class="docutils literal notranslate"><span class="pre">DatabaseResource</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.ChatResource"><code class="docutils literal notranslate"><span class="pre">ChatResource</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.MessageResource"><code class="docutils literal notranslate"><span class="pre">MessageResource</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.ExecutorResource"><code class="docutils literal notranslate"><span class="pre">ExecutorResource</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.Chat2QueryService"><code class="docutils literal notranslate"><span class="pre">Chat2QueryService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.Chat2QueryError"><code class="docutils literal notranslate"><span class="pre">Chat2QueryError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.APIError"><code class="docutils literal notranslate"><span class="pre">APIError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.NotFoundError"><code class="docutils literal notranslate"><span class="pre">NotFoundError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#chat2query.hello_world"><code class="docutils literal notranslate"><span class="pre">hello_world()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#module-chat2query.client">chat2query.client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#module-chat2query.exceptions">chat2query.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html#module-chat2query.service">chat2query.service module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/modules.html">chat2query</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/chat2query.html">chat2query package</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="next">
+    <a href="api/chat2query.html"
+       title="next chapter">chat2query package →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2025, Chat2Query.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.4.7 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.9.1.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
